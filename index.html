@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Pizza Order</title>
+    <script src="js\pizzamenu.js"></script>
+    <!---Bootstrap CSS--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body id="page-top">
+
+<!---Top banner-->
+    <div class="container-fluid" id="top">
+        <h1>Pizza Time!</h1>
+        <h6 class="lead">Check out our menu below and customize your perfect pizza!</h6>
+    </div>
+<!---Top banner-->
+
+<!--Menu-->
+<div class="container-fluid">
+
+    <!---Size Selection-->
+    <row class="row p-5 my-5">
+        <col class="col-4 mx-2">
+            <section class="formchoice">
+                <h3>Size Selection</h3>
+                <div class="form-check">
+                    <input class="form-check-input size" type="radio" name="sizeChoice" id= "Personal" value="6">
+                    <label class="form-check-label" for="Personal">
+                        <h5>Personal Pizza</h5><p>$6.00</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input size" type="radio" name="sizeChoice" id= "Medium" value="10">
+                    <label class="form-check-label" for="Medium">
+                        <h5>Medium Pizza</h5><p>$10.00</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input size" type="radio" name="sizeChoice" id= "Large" value="14">
+                    <label class="form-check-label" for="Large">
+                        <h5>Large Pizza</h5><p>$14.00</p>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input size" type="radio" name="sizeChoice" id= "Extra Large" value="16">
+                    <label class="form-check-label" for="Extra Large">
+                        <h5>Extra Large Pizza</h5><p>$16.00</p>
+                    </label>
+                </div>
+            </section>
+        </col>
+        <col class="col-8 mx-2">
+        </col>
+    </row>
+    <!---Size Selection-->
+
+    <!---Meat Selection-->
+    <row class="row p-5 my-5">
+        <col class="col-4">
+            <section class="formchoice">
+                <h3>Meat Selection</h3>
+                <p>First choice is included, additional choices add $1</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="meatChoice[]" id= "Pepperoni">
+                    <label class="form-check-label" for="Pepperoni">
+                        Pepperoni
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="meatChoice[]" id= "Sausage">
+                    <label class="form-check-label" for="Sausage">
+                        Sausage
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="meatChoice[]" id= "Canadian Bacon">
+                    <label class="form-check-label" for="Canadian Bacon">
+                        Canadian Bacon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="meatChoice[]" id= "Ground Beef">
+                    <label class="form-check-label" for="Ground Beef">
+                        Ground Beef
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="meatChoice[]" id= "Anchovy">
+                    <label class="form-check-label" for="Anchovy">
+                        Anchovy
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="meatChoice[]" id= "Chicken">
+                    <label class="form-check-label" for="Chicken">
+                        Chicken
+                    </label>
+                </div>
+            </section>
+        </col>
+    </row>
+    <!---Meat Selection-->
+
+    <!---Cheese Selection-->
+    <row class="row p-5 my-5">
+        <col class="col-4 mx-2">
+            <section class="formchoice">
+                <h3>Cheese Selection</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cheeseChoice" id="No Cheese">
+                    <label class="form-check-label" for="No Cheese">
+                        No Cheese
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cheeseChoice" id="Regular">
+                    <label class="form-check-label" for="Regular">
+                        Regular
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cheeseChoice"  id="Extra Cheese">
+                    <label class="form-check-label" for="Extra Cheese">
+                        Extra Cheese - adds $3
+                    </label>
+                </div>
+            </section>
+        </col>
+        <col class="col-8 mx-2">
+        </col>
+    </row>
+    <!---Cheese Selection-->
+
+    <!---Crust Selection-->
+    <row class="row p-5 my-5">
+        <col class="col-4 mx-2">
+            <section class="formchoice">
+                <h3>Crust Selection</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="crustChoice" id="Plain Crust" value="plain crust">
+                    <label class="form-check-label" for="Plain Crust">
+                        Plain Crust
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="crustChoice" id="Garlic Butter Crust" value="garlic butter crust">
+                    <label class="form-check-label" for="Garlic Butter Crust">
+                        Garlic Butter Crust
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="crustChoice" id="Cheese Stuffed Crust" value="cheese stuffed crust">
+                    <label class="form-check-label" for="Cheese Stuffed Crust">
+                        Cheese Stuffed Crust - adds $3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="crustChoice" id="Spicy Crust" value="spicy crust">
+                    <label class="form-check-label" for="Spicy Crust">
+                        Spicy Crust
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="crustChoice" id="House Special Crust" value="house special crust">
+                    <label class="form-check-label" for="House Special Crust">
+                        House Special Crust
+                    </label>
+                </div>
+            </section>
+        </col>
+        <col class="col-8 mx-2">
+        </col>
+    </row>
+    <!---Crust Selection-->
+
+    <!---Sauce Selection-->
+    <row class="row p-5 my-5">
+        <col class="col-4 mx-2">
+            <section class="formchoice">
+                <h3>Sauce Selection</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sauceChoice" id="Marinara Sauce" value="marinara">
+                    <label class="form-check-label" for="Marinara Sauce">
+                        Marinara Sauce
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sauceChoice" id="White Sauce" value="white">
+                    <label class="form-check-label" for="White Sauce">
+                        White Sauce
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sauceChoice" id="Barbeque Sauce" value="bbq">
+                    <label class="form-check-label" for="Barbeque Sauce">
+                        Barbeque Sauce
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sauceChoice" id="No Sauce" value="no sauce">
+                    <label class="form-check-label" for="No Sauce">
+                        No Sauce
+                    </label>
+                </div>
+            </section>
+        </col>
+        <col class="col-8 mx-2">
+        </col>
+    </row>
+    <!---Sauce Selection-->
+
+    <!---Veggie Selection-->
+    <row class="row p-5 my-5">
+        <col class="col-4">
+            <section class="formchoice">
+                <h3>Veggie Selection</h3>
+                <p>First choice is included, additional choices add $1</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Tomatoes">
+                    <label class="form-check-label" for="Tomatoes">
+                        Tomatoes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Onions">
+                    <label class="form-check-label" for="Onions">
+                        Onions
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Olives">
+                    <label class="form-check-label" for="Olives">
+                        Olives
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Mushrooms">
+                    <label class="form-check-label" for="Mushrooms">
+                        Mushrooms
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Pineapple">
+                    <label class="form-check-label" for="Pineapple">
+                        Pineapple - ew don't get this.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Spinach">
+                    <label class="form-check-label" for="Spinach">
+                        Spinach
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="veggieChoice[]" id="Jalapeno">
+                    <label class="form-check-label" for="Jalapeno">
+                        Jalapeno
+                    </label>
+                </div>
+            </section>
+        </col>  
+    </row>
+    <!---Veggie Selection-->
+
+    <!-- Button trigger modal and order -->
+    <button type="button" class="btn btn-danger" onclick="printOrder()" data-toggle="modal" data-target="#exampleModal">Order</button>
+      <row>   
+            <div id="order">
+                <button id="btnOrder" onclick="printOrder()" type="button" class="btn btn-outline-danger">Order Now</button>
+            </div>
+        </row>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pizza Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <h6 id=sizeFinal></h6><br>
+                    <p id=sizePriceFinal></p><br><br>
+    
+                    <h6 id=meatFinal></h6>
+                    <p id=meatPriceFinal></p><br><br>
+                   
+                    <h6 id=cheeseFinal></h6>
+                    <p id=cheesePriceFinal></p><br><br>
+                   
+                    <h6 id=crustFinal></h6>
+                    <p id=crustPriceFinal></p><br><br>
+                  
+                    <h6 id=sauceFinal></h6>
+                    <p id=saucePriceFinal></p><br><br>
+                   
+                    <h6 id=veggieFinal></h6>
+                    <p id=veggiePriceFinal></p><br><br>
+                   
+                    <h2 id=totalPrice></h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+    
+
+
+
+
+<!---JS---->   
+<script src="js\pizzamenu.js"></script>
+
+<!---Bootstrap JS---->    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body{
+    color: white;
+    background:url(https://cdn.pixabay.com/photo/2017/07/08/11/33/white-2484120_960_720.png);
+}
+
+.modal-body .p{
+    text-align: right;
+}
+
+#top{
+    background: linear-gradient(to bottom, #de4d44, rgba(254,132,42,0.4)) !important;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #de4d44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #de4d44, rgba(254,132,42,0.4));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #de4d44, rgba(254,132,42,0.4));  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo{
+    float: right;
+    max-width: 100%;
+}
+
+.formchoice{
+    float: inline-end;
+}
+
+.row{
+    background-color: rgba(254,132,42,0.9) !important;
+    background-size: 100% ;
+}
